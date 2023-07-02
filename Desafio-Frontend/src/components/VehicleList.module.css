@@ -1,0 +1,41 @@
+.vehicle {
+  background-color: #242629;
+  padding: 1em 0;
+}
+
+.vehicle h1 {
+  margin-bottom: 1em;
+}
+
+.vehicle_container {
+  display: grid;
+  width: 90vw;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div h1 {
+  font-size: 4rem;
+}
+
+@media (min-width: 700px) {
+  .vehicle_container {
+    grid-template-columns: minmax(250px, 1fr) minmax(250px, 1fr);
+  }
+}
+
+@media (min-width: 1250px) {
+  .vehicle_container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
